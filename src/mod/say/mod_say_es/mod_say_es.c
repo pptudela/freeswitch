@@ -92,11 +92,26 @@ static switch_status_t play_group(switch_say_method_t method, int a, int b, int 
 				say_file("digits/100.wav");
 			}
 			break;
+		case 2:
+			say_file("digits/200.wav");
+			break;
+		case 3:
+			say_file("digits/300.wav");
+			break;
+		case 4:
+			say_file("digits/400.wav");
+			break;
 		case 5:
 			say_file("digits/500.wav");
 			break;
+		case 6:
+			say_file("digits/600.wav");
+			break;
 		case 7:
 			say_file("digits/700.wav");
+			break;
+		case 8:
+			say_file("digits/800.wav");
 			break;
 		case 9:
 			say_file("digits/900.wav");
