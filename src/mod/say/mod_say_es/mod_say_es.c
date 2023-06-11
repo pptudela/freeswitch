@@ -215,7 +215,7 @@ static switch_status_t es_say_general_count(switch_core_session_t *session, char
 			if (!places[5] && !places[4] && (places[3] == 1)) {
 				say_file("digits/thousand.wav");
 			}
-			if ((status = play_group(SSM_PRONOUNCED, places[5], places[4], places[3], "digits/thousand.wav", session, args)) != SWITCH_STATUS_SUCCESS) {
+			else if ((status = play_group(SSM_PRONOUNCED, places[5], places[4], places[3], "digits/thousand.wav", session, args)) != SWITCH_STATUS_SUCCESS) {
 				return status;
 			}
 			if ((status = play_group(say_args->method, places[2], places[1], places[0], NULL, session, args)) != SWITCH_STATUS_SUCCESS) {
